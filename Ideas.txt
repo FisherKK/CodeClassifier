@@ -1,0 +1,28 @@
+Ideas
+
+a) Software Engineering
+- move code responsible for creating best model to Python project
+- divide code into modules
+- code is function ready so it can be additionally tested for stability
+- provide simple api that will allow to use model thorugh commandline
+
+b) Preprocessing / Data Cleaning
+- different tokenization pattern for vectorizers - I would like to perserving characters as words and play with ngrams
+- try removing digits from dictionary
+
+c) Model Optimization
+- I would like to add hyperopt instead of GridSearch
+
+d) Algorithms
+- I would like to try ExtraTrees
+- I would like to try Neural Networks (Multilayer Perceptron) e.g. KerasClassifier of Sklearn, I didn't have time to implement them
+
+e) Architecture
+- would like to add learning_curves, I prefer them more for monitoring overfitting
+- different train_predict variant for Neural Networks
+
+f) Other
+- model stacking on models that were doing worse on Python and better on Mathematica
+- I would like to get more data from web
+- preview code of misclassified files, maybe there is an issue I haven't spotted
+- Mathemtaica class needs more analysis, models have trouble with it
