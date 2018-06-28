@@ -1,0 +1,15 @@
+I've decided to pick model with name "random_forests_cv_maxfeatures10000_mindf15_ngram11" based on RandomForests. 
+
+----- Data:
+Data after cleaning was divided into ratio 0.75 for training set and 0.25 for stratified test set (same fraction of samples per class). For testing more complex models like RandomForests or LGBM, KFold Cross Validation was used with 3 splits. Results were averaged and best model picked.
+
+----- Metric:
+Model performance is measured with f1_score metric with "micro" averaging (f1_score per class averaged together) to be aware of true_negatives and fales_negatives. 
+
+ - f1_score on train set: 0.9001492784873113
+ - f1_score on test set: 0.8564319482458322
+
+ ---- Why did I pick this model?
+ There were other models that had higher performance like "lgbm_cv_maxfeatures10000_mindf5_ngram13" which reached f1_score on test set equal to 0.88. I decided to pick RandomForests model anyway because the f1_score result difference of 0.03 is not that big and difference between train/test scores are very close to each other. 
+
+ This model should overfit the least.
